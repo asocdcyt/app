@@ -1,0 +1,496 @@
+<!-- Navbar -->
+ {{> navbar-index }}
+
+  <section class="min-vh-100 mb-8 mt-8" id="Inscription">
+    <div class="page-header align-items-start min-vh-50 pt-2 pb-9 m-3">
+      <div class="container">
+        <div class="row justify-content-center">
+          
+          <div class="col-lg-5 text-center mx-auto">
+            <h3 class="text-gradient text-warning mb-0 mt-5">Diseño Gráfico:</br> Fácil-Intermedio</h3>
+            <p class="text-lead text-dark">A continuación rellene el formulario de inscripción:</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row mt-lg-n10 mt-md-n11 mt-n10">
+        <div class="col-xl-12 col-lg-12 col-md-12 mx-auto">
+          {{#if success_msg }}
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <span class="alert-icon text-white"><i class="ni ni-like-2"></i></span>
+                <span class="alert-text text-white"><strong>¡Enhorabuena! -</strong> {{ success_msg }}</span>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            {{/if}}
+            {{#if error}}
+              <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                  <span class="alert-icon text-white"><i class="ni ni-support-16"></i></span>
+                  <span class="alert-text text-white"><strong>¡Hey! -</strong> {{error}}</span>
+                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+            {{/if}}
+            {{#each errors }}
+              <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                  <span class="alert-icon text-white"><i class="ni ni-support-16"></i></span>
+                  <span class="alert-text text-white"><strong>¡Hey! -</strong> {{text}}</span>
+                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+            {{/each}}
+            {{#if error_msg }}
+              <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                  <span class="alert-icon text-white"><i class="ni ni-support-16"></i></span>
+                  <span class="alert-text text-white"><strong>¡Hey! -</strong> {{error_msg}}</span>
+                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+            {{/if}}
+          <div class="card z-index-0">
+            <div class="card-body">
+              <form id="f1" name="f1" action="/curse" method="POST">
+                  <h5 class="heading-small text-muted mb-4 mt-4">Informacion del usuario:</h5>
+                  <div class="pl-lg-4">
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="form-group">
+                          <label class="form-control-label">Nombre Completo</label>
+                          <input type="text" name="fullname" class="form-control" placeholder="Nombres..." maxlength="100" value="{{fullname}}">
+                        </div>
+                      </div>  
+                      <div class="col-lg-6">
+                        <div class="form-group">
+                          <label class="form-control-label">N° de C.I. / R.I.F.</label>
+                          <input type="number" name="idcard" class="form-control" placeholder="Cédula de Identidad..." value="{{idcard}}">
+                        </div>
+                      </div>                 
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-4">
+                        <div class="form-group">
+                          <label class="form-control-label">Correo Electrónico</label>
+                          <input type="email" name="email" class="form-control" placeholder="Correo Electrónico..." value="{{email}}">
+                        </div>
+                      </div>
+                      <div class="col-lg-4">
+                        <div class="form-group">
+                          <label class="form-control-label">Número de WhatsApp</label>
+                          <input type="number" name="ws" class="form-control" placeholder="Número de WhatsApp" value="{{ws}}">
+                        </div>
+                      </div>
+                      <div class="col-lg-4">
+                        <div class="form-group">
+                          <label class="form-control-label">Número de Teléfono</label>
+                          <input type="number" name="phone" class="form-control" placeholder="Número Telefónico de Llamadas..." value="{{phone}}">
+                        </div>
+                      </div>
+                      <div class="col-lg-12">
+                        <div class="form-group">
+                          <label for="exampleFormControlSelect1">Curso a Inscribir</label>
+                          <select class="form-control" type="txt" name="curse" id="exampleFormControlSelect1">
+                            <option selected>Diseño Gráfico: Fácil-Intermedio</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <hr class="my-4" />
+                  </div>
+                  
+                  <hr class="my-4" />
+                  <h5 class="heading-small text-muted mb-4 mt-4 ">Seleccione la(s) semana(s), que desea pagar para ser inscrito en el curso "Diseño Gráfico, Fácil - Intermedio":</h5>
+
+                  <div class="pl-lg-4" id="v5">
+                    <div class="alert alert-warning text-white" role="alert">
+                      <strong>¡Info! -</strong> Precio total del curso $25, $4 semanal + $1 de inscripción.
+                    </div>
+                    <ul class="list-group">
+                        <li class="list-group-item active">
+                          <div class="row">
+                            <div class="col-6 text-center">
+                              Semanas
+                            </div>
+                            <div class="col-6 text-end">
+                              Monto
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                          <div class="form-check">
+                          <input class="form-check-input checkboxingi" type="checkbox" value=true name="semana1" id="fcustomCheck1">
+                          <label class="custom-control-label h6" for="customCheck1">Semana 1</label>
+                          </div>
+                          <span class="badge badge-primary bg-gradient-primary badge-pill h5">$5</span>
+                        </li>
+
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                          <div class="form-check">
+                          <input class="form-check-input checkboxingi" type="checkbox" value=true name="semana2" id="fcustomCheck1">
+                          <label class="custom-control-label h6" for="customCheck1">Semana 2</label>
+                        </div>
+                        <span class="badge badge-primary bg-gradient-primary badge-pill h5">$4</span>
+                        </li>
+
+
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                         <div class="form-check">
+                          <input class="form-check-input checkboxingi" type="checkbox" value=true name="semana3" id="fcustomCheck1">
+                          <label class="custom-control-label h6" for="customCheck1">Semana 3</label>
+                        </div>
+                        <span class="badge badge-primary bg-gradient-primary badge-pill h5">$4</span>
+                        </li>
+
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                          <div class="form-check">
+                          <input class="form-check-input checkboxingi" type="checkbox" value=true name="semana4" id="fcustomCheck1">
+                          <label class="custom-control-label h6" for="customCheck1">Semana 4</label>
+                        </div>
+                        <span class="badge badge-primary bg-gradient-primary badge-pill h5">$4</span>
+                        </li>
+
+
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                          <div class="form-check">
+                          <input class="form-check-input checkboxingi" type="checkbox" value=true name="semana5" id="fcustomCheck1">
+                          <label class="custom-control-label h6" for="customCheck1">Semana 5</label>
+                        </div>
+                        <span class="badge badge-primary bg-gradient-primary badge-pill h5">$4</span>
+                        </li>
+
+
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                          <div class="form-check">
+                          <input class="form-check-input checkboxingi" type="checkbox" value=true name="semana6" id="fcustomCheck1">
+                          <label class="custom-control-label h6" for="customCheck1">Semana 6</label>
+                        </div>
+                        <span class="badge badge-primary bg-gradient-primary badge-pill h5">$4</span>
+                        </li>
+
+                      
+                    </ul>
+                    <ul class="list-group mt-4">
+                      <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <label class="custom-control-label h6" for="customCheck1">MONTO TOTAL A PAGAR:</label>
+                        <span class="badge badge-primary bg-gradient-primary badge-pill h5"  id="valueTotali">$5</span>
+                      </li>
+                    </ul> 
+                  </div>
+                  <hr class="my-4" />
+                  <h5 class="heading-small text-muted mb-4 mt-4 ">Métodos de Pago</h5>
+                  <div class="col-md-12 mx-auto">
+                          <div class="accordion" id="accordionRental">
+                            <div class="accordion-item mb-3">
+                              <h5 class="accordion-header" id="headingOne">
+                                <button class="accordion-button border-bottom font-weight-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                  Transferencias Nacionales
+                                  <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0 me-3" aria-hidden="true"></i>
+                                  <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0 me-3" aria-hidden="true"></i>
+                                </button>
+                              </h5>
+                              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionRental" style="">
+                                <div class="accordion-body opacity-8">
+                                  Nombre: <span class="font-weight-bold text-dark">AC DE EGRESADOS DEL DECANATO DE CIENCIAS</span></br>
+                                  Tipo de Cuenta: <span class="font-weight-bold text-dark">Corriente</span></br>
+                                  Banco: <span class="font-weight-bold text-dark">Banco Activo</span></br>
+                                  N° de Cuenta: <span class="font-weight-bold text-dark">0171-0011-4060-0263-6690</span></br>
+                                  Rif.: <span class="font-weight-bold text-dark">J-500601077</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item mb-3">
+                              <h5 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button border-bottom font-weight-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                  Transferencias Nacionales en Dólares
+                                  <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0 me-3" aria-hidden="true"></i>
+                                  <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0 me-3" aria-hidden="true"></i>
+                                </button>
+                              </h5>
+                              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionRental">
+                                <div class="accordion-body opacity-8">
+                                  Nombre: <span class="font-weight-bold text-dark">AC de Egresados del Decanato de Ciencias</span></br>
+                                  N° de Cuenta: <span class="font-weight-bold text-dark">0171-0011-4180-0022-2022</span></br>
+                                  Rif.: <span class="font-weight-bold text-dark">J-500601077</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item mb-3">
+                              <h5 class="accordion-header" id="headingThree">
+                                <button class="accordion-button border-bottom font-weight-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                  Pago Móvil Interbancario
+                                  <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0 me-3" aria-hidden="true"></i>
+                                  <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0 me-3" aria-hidden="true"></i>
+                                </button>
+                              </h5>
+                              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionRental">
+                                <div class="accordion-body opacity-8">
+                                  Rif.: <span class="font-weight-bold text-dark">J-500601077</span></br>
+                                  N° de teléfono:<span class="font-weight-bold text-dark"> 04125163626</span></br>
+                                  <span class="font-weight-bold text-dark">Banco Activo</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item mb-3">
+                              <h5 class="accordion-header" id="headingFour">
+                                <button class="accordion-button border-bottom font-weight-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                  PayPal
+                                  <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0 me-3" aria-hidden="true"></i>
+                                  <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0 me-3" aria-hidden="true"></i>
+                                </button>
+                              </h5>
+                              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionRental">
+                                <div class="accordion-body opacity-8">
+                                  Correo Electrónico PayPal: <span class="font-weight-bold text-dark">asocdcyt@gmail.com</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                  </div>
+                  <hr class="my-4" />
+                  <h5 class="heading-small text-muted mb-4 mt-4 ">Verificación de Pago</h5>
+                  <div class="row">
+                    <div class="col-lg-12">
+                        <div class="form-group">
+                          <label class="form-control-label">Fecha y Hora</label>
+                          <input class="form-control" type="datetime-local" name="fulltime" value="2022-11-23T10:30:00" id="example-datetime-local-input">
+                        </div>
+                        <div class="form-group">
+                          <label class="form-control-label">Banco (Ej.: Transferencia Nacional, Pago Movil, Transferencia Nacional en Dolares, Paypal)</label>
+                          <input type="text" name="bankref" class="form-control" placeholder="Coloque el Banco donde realizó la transferencia..." value="{{bankref}}">
+                        </div>
+                        <div class="form-group">
+                          <label class="form-control-label">Monto Total a Pagar</label>
+                          <div class="input-group">
+
+                            <span class="input-group-text">$</span>
+                            <input type="number" class="form-control" aria-label="Dollar amount (with dot and two decimal places)" name="amountref" id="amountref" value="{{amountref}}">
+                            <span class="input-group-text">.00</span>
+                          </div>
+                        </div>
+                        
+                        <div class="form-group">
+                          <label class="form-control-label">Número de Referencia</label>
+                          <input type="number" name="reference" class="form-control" placeholder="Coloque su número de referencia de transferencia..." value="{{reference}}">
+                        </div>
+                    </div>
+                  </div>
+                  <p class="text-dark font-weight-bold">Adicionalmente tiene que enviar su capture hacía la siguiente dirección de correo electrónico: <span class="font-weight-bold mx-2 text-primary text-gradient"> cursos@asocdcyt.com</span></p>
+                  <div class="col-md-12 text-center">
+                    <h4 class="text-gradient text-danger mt-4">¿Está seguro de haber realizado el pago?</h4>
+                            <p>Si es así lo invitamos a confirmar su inscripción, de lo contrario realice el pago antes para asistir al curso.</p>
+                    <button type="submit" class="btn bg-gradient-primary">¡Confirmar inscripción!</button>
+                  </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {{>footer-a}}
+
+<script type="text/javascript">
+
+  if (document.getElementById('state1')) {
+    const countUp = new CountUp('state1', document.getElementById("state1").getAttribute("countTo"));
+    if (!countUp.error) {
+      countUp.start();
+    } else {
+      console.error(countUp.error);
+    }
+  }
+  if (document.getElementById('state2')) {
+    const countUp1 = new CountUp('state2', document.getElementById("state2").getAttribute("countTo"));
+    if (!countUp1.error) {
+      countUp1.start();
+    } else {
+      console.error(countUp1.error);
+    }
+  }
+  if (document.getElementById('state3')) {
+    const countUp2 = new CountUp('state3', document.getElementById("state3").getAttribute("countTo"));
+    if (!countUp2.error) {
+      countUp2.start();
+    } else {
+      console.error(countUp2.error);
+    };
+  }
+</script>
+  <style>
+  #ofBar {
+    display: none;
+    background: #fff;
+    z-index: 999999999;
+    font-size: 16px;
+    color: #333;
+    padding: 16px 40px;
+    font-weight: 400;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 40px;
+    width: 80%;
+    border-radius: 8px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 13px 27px -5px rgba(50,50,93,0.25), 0 8px 16px -8px rgba(0,0,0,0.3), 0 -6px 16px -6px rgba(0,0,0,0.025);
+  }
+
+  #ofBar.activo {
+    display: flex;
+  }
+
+  #ofBar-logo img {
+    height: 50px;
+  }
+
+  #ofBar-content {
+    display: inline;
+    padding: 0 15px;
+  }
+
+  #ofBar-right {
+    display: flex;
+    align-items: center;
+  }
+
+  #ofBar b {
+    font-size: 15px !important;
+  }
+  #count-down {
+    display: initial;
+    padding-left: 10px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  #close-bar {
+    font-size: 17px;
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  #close-bar:hover{
+    opacity: 1;
+  }
+  #btn-bar {
+    background-image: linear-gradient(67deg, rgb(255 255 255) 0%, rgb(45 45 136) 0%, rgb(60 174 234) 100%);
+    color: #fff;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 12px;
+    opacity: .95;
+    margin-right: 20px;
+    box-shadow: 0 5px 10px -3px rgba(0,0,0,.23), 0 6px 10px -5px rgba(0,0,0,.25);
+  }
+   #btn-bar, #btn-bar:hover, #btn-bar:focus, #btn-bar:active {
+     text-decoration: none !important;
+     color: #fff !important;
+ }
+  #btn-bar:hover{
+    opacity: 1;
+  }
+
+  #btn-bar span, #ofBar-content span {
+    color: red;
+    font-weight: 700;
+  }
+
+  #oldPriceBar {
+    text-decoration: line-through;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+    top: 2px;
+    position: relative;
+  }
+  #newPrice{
+    color: #fff;
+    font-size: 19px;
+    font-weight: 700;
+    top: 2px;
+    position: relative;
+    margin-left: 7px;
+  }
+
+  #fromText {
+    font-size: 15px;
+    color: #fff;
+    font-weight: 400;
+    margin-right: 3px;
+    top: 0px;
+    position: relative;
+  }
+
+  @media(max-width: 991px){
+
+  }
+  @media (max-width: 768px) {
+    #count-down {
+      display: block;
+      margin-top: 15px;
+    }
+
+    #ofBar {
+      flex-direction: column;
+      align-items: normal;
+    }
+
+    #ofBar-content {
+      margin: 15px 0;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    #ofBar-right {
+      justify-content: flex-end;
+    }
+  }
+
+  .showing {
+    display: none;
+  }
+
+  .activo {
+    display: block;
+  }
+
+
+</style>
+<script type="text/javascript">
+
+  var sumi = 1;
+  var listArrayese = 4;
+  var valueTotali = document.getElementById('valueTotali');
+
+  var checkboxingi = document.querySelectorAll('.checkboxingi');
+
+  var f1 = document.getElementById('f1');
+  var amountref = document.getElementById('amountref');
+          
+
+// Estudiantes en General Listo LISTO
+  for(var checkEstu of checkboxingi) {
+    checkEstu.addEventListener('click', function(){
+      if(this.checked == true) {
+        sumi = sumi + listArrayese;
+        valueTotali.innerHTML = "$" + sumi;
+        document.f1.amountref.value = sumi;
+      } else {
+        sumi = sumi - listArrayese;
+        valueTotali.innerHTML = "$" + sumi;
+        document.f1.amountref.value = sumi;
+      }
+    })
+  }
+
+</script>

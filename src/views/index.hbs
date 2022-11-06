@@ -1,0 +1,1097 @@
+  <div id="ofBar" class="activo">
+    <div id="ofBar-logo"> 
+      <img alt="creative-tim-logo" src="/img/asoc-banner.png" height="50">
+    </div>
+    <div id="ofBar-content">
+      <b>¡CURSOS 2022! - </b> Actualizate e inscribete en nuestros cursos 📈
+    </div>
+    <div id="ofBar-right">
+      <a id="btn-bar" style="cursor: pointer;">¡PARTICIPAR!</a>
+      <a id="close-barX" style="cursor: pointer;">×</a>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  {{> navbar-index }}
+
+  <header class="">
+        <div id="carouselExampleIndicatorsPEN" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item">
+                <div class="page-header min-vh-85" style="background-image: url('/img/Promo 13 Ingeniería de Producción.jpg');">
+                  <span class="mask bg-gradient-dark opacity-8"></span>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-lg-7 text-center mx-auto">
+                        <h1 class="text-white">Juntos somos <span class="text-white" id="typed"></span></h1>
+                        <div id="typed-strings">
+                          <h1 class="text-gradient text-primary">más</h1>
+                          <h1 class="text-gradient text-danger">amor</h1>
+                          <h1 class="text-gradient text-warning">esperanza</h1>
+                          <h1 class="text-gradient text-warning">DCyT</h1>
+                          <h1 class="text-gradient text-warning">UCLA</h1>
+                        </div>
+
+                        <script type="text/javascript">
+                          if (document.getElementById('typed')) {
+                            var typed = new Typed("#typed", {
+                              stringsElement: '#typed-strings',
+                              typeSpeed: 90,
+                              backSpeed: 90,
+                              backDelay: 200,
+                              startDelay: 500,
+                              loop: true
+                            });
+                          }
+                        </script>
+                        <p class="lead text-white mt-3">Asociación de egresados unidos en todo el mundo por amor a los estudios adquiridos con el fin de apoyar a nuestro DCyT en todos los aspectos. </p>
+                        <a href="#news" class="btn bg-gradient-warning mt-2 me-2 text-white" data-bs-toggle="tooltip" data-bs-placement="top" title="¡EGRESADOS en el MUNDO!">
+                          Noticias
+                        </a>
+                        <a href="/signup" class="btn bg-gradient-secondary mt-2 me-2 text-dark" data-bs-toggle="tooltip" data-bs-placement="top" title="¡Obtendrás Información en TIEMPO REAL!">
+                          Suscribirme
+                        </a>
+                        <a href="#galeryE" class="mt-2 me-2 btn bg-gradient-info text-white" data-bs-toggle="tooltip" data-bs-placement="top" title="¡Monta tu FOTO de PROMOCIÓN!">
+                          Galeria de Egresados
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item active">
+                <a href="#news">
+                  <div class="page-header min-vh-85" style="background-image: url('/img/curso2022.png');">
+                  </div>
+                </a>
+                
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicatorsPEN" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicatorsPEN" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+            <div class="position-absolute w-100 z-index-1 bottom-0">
+              <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 40" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                  <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="moving-waves">
+                  <use xlink:href="#gentle-wave" x="48" y="-1" fill="rgba(255,255,255,0.40" />
+                  <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.35)" />
+                  <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.25)" />
+                  <use xlink:href="#gentle-wave" x="48" y="8" fill="rgba(255,255,255,0.20)" />
+                  <use xlink:href="#gentle-wave" x="48" y="13" fill="rgba(255,255,255,0.15)" />
+                  <use xlink:href="#gentle-wave" x="48" y="16" fill="rgba(255,255,255,0.95" />
+                </g>
+              </svg>
+            </div>
+        </div>
+    
+    <!--
+      <div class="page-header min-vh-85" style="background-image: url('/img/Promo 13 Ingeniería de Producción.jpg');">
+    <span class="mask bg-gradient-dark opacity-8"></span>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 text-center mx-auto">
+            <h1 class="text-white">Juntos somos <span class="text-white" id="typed"></span></h1>
+            <div id="typed-strings">
+              <h1 class="text-gradient text-primary">más</h1>
+              <h1 class="text-gradient text-danger">amor</h1>
+              <h1 class="text-gradient text-warning">esperanza</h1>
+              <h1 class="text-gradient text-warning">DCyT</h1>
+              <h1 class="text-gradient text-warning">UCLA</h1>
+            </div>
+
+            <script type="text/javascript">
+              if (document.getElementById('typed')) {
+                var typed = new Typed("#typed", {
+                  stringsElement: '#typed-strings',
+                  typeSpeed: 90,
+                  backSpeed: 90,
+                  backDelay: 200,
+                  startDelay: 500,
+                  loop: true
+                });
+              }
+            </script>
+            <p class="lead text-white mt-3">Asociación de egresados unidos en todo el mundo por amor a los estudios adquiridos con el fin de apoyar a nuestro DCyT en todos los aspectos. </p>
+            <a href="#news" class="btn bg-gradient-warning mt-2 me-2 text-white" data-bs-toggle="tooltip" data-bs-placement="top" title="¡EGRESADOS en el MUNDO!">
+              Noticias
+            </a>
+            <a href="/signup" class="btn bg-gradient-secondary mt-2 me-2 text-dark" data-bs-toggle="tooltip" data-bs-placement="top" title="¡Obtendrás Información en TIEMPO REAL!">
+              Suscribirme
+            </a>
+            <a href="#galeryE" class="mt-2 me-2 btn bg-gradient-info text-white" data-bs-toggle="tooltip" data-bs-placement="top" title="¡Monta tu FOTO de PROMOCIÓN!">
+              Galeria de Egresados
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="position-absolute w-100 z-index-1 bottom-0">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 40" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="moving-waves">
+          <use xlink:href="#gentle-wave" x="48" y="-1" fill="rgba(255,255,255,0.40" />
+          <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.35)" />
+          <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.25)" />
+          <use xlink:href="#gentle-wave" x="48" y="8" fill="rgba(255,255,255,0.20)" />
+          <use xlink:href="#gentle-wave" x="48" y="13" fill="rgba(255,255,255,0.15)" />
+          <use xlink:href="#gentle-wave" x="48" y="16" fill="rgba(255,255,255,0.95" />
+        </g>
+      </svg>
+    </div>
+    </div>
+    -->
+  </header>
+<div class="wraper" style="margin-top: 10vh;">
+
+
+    <section class="pt-3 pb-4" id="count-stats">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9 z-index-2 border-radius-xl mt-n10 mx-auto py-3 blur shadow-blur">
+            <div class="row">
+              <div class="col-md-4 position-relative">
+                <div class="p-3 text-center">
+                  <h1 class="text-gradient text-primary"><span id="state1" countto="2">0</span> años</h1>
+                  <h5 class="mt-3">Trayectoria</h5>
+                  <p class="text-sm">Años desde la fundación de la asociacion hasta ahora.</p>
+                </div>
+                <hr class="vertical dark">
+              </div>
+              <div class="col-md-4 position-relative">
+                <div class="p-3 text-center">
+                  <h1 class="text-gradient text-primary"> <span id="state2" countto="8593">0</span></h1>
+                  <h5 class="mt-3">Total de egresados del DCyT</h5>
+                  <p class="text-sm">Universo de egresados hasta el momento.</p>
+                </div>
+                <hr class="vertical dark">
+              </div>
+              <div class="col-md-4">
+                <div class="p-3 text-center">
+                  <h1 class="text-gradient text-primary"><span id="state3" countto="390">0</span></h1>
+                  <h5 class="mt-3">Egresados aliados</h5>
+                  <p class="text-sm">Egresados aliados fortaleciendo lazos y contando.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="my-5 py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-12 ms-auto">
+            <div class="row justify-content-start">
+              <div class="col-md-4">
+                <div class="info">
+                  <div class="icon icon-sm">
+                    <i class="ni ni-satisfied text-gradient text-success" style="font-size: 30px;"></i>
+                  </div>
+                  <h5 class="font-weight-bolder mt-3">¿Quiénes somos?</h5>
+                  <p class="pe-5">Somos una Asociación Civil sin fines de lucro, conformada por Egresados del Decanato de Ciencias y Tecnología de la UCLA, que promueve y robustece los lazos entre estos profesionales y la comunidad de dicho decanato, a través de programas, proyectos y actividades, que apuntan a generar beneficios para todas las partes.</p>
+
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="info">
+                  <div class="icon icon-sm">
+                    <i class="ni ni-spaceship text-gradient text-primary" style="font-size: 30px;"></i>
+                  </div>
+
+                  <h5 class="font-weight-bolder mt-3">¿Cuál es nuestro objetivo?</h5>
+                  <p class="pe-3">Promover la interacción entre la comunidad del DCyT, sus egresados y otros actores del entorno, con miras al desarrollo de iniciativas que contribuyan a la sostenibilidad de las funciones académicas de esta instancia universitaria y a la proyección de su acción en el contexto social.</p>
+
+                </div>
+              </div>
+              <div class="col-md-4 ms-auto me-auto p-lg-4 mt-lg-0 mt-4">
+                <a href="/nelly-velasquez">
+                  <div class="card card-background tilt">
+                  <div class="full-background mask bg-gradient-dark opacity-6" style="background-image: url('/img/estudiar.jpeg');"></div>
+                  <div class="card-body pt-7 text-center">
+                    <div class="icon icon-lg up mb-3 mt-3">
+                      <i class="ni ni-bold-down text-white" style="font-size: 50px;"></i>
+                    </div>
+                    <h3 class="text-white up mb-0">Trayectoria de la Dra. Nelly Del Valle Velásquez Velásquez</h3>
+                    <a href="/nelly-velasquez" class="btn btn-outline-white mt-5 up btn-round">Ver trayectoria</a>
+                  </div>
+                </div>
+                </a>
+                
+              </div>
+            </div>
+            <div class="row justify-content-start">
+              <div class="col-md-6 mt-3">
+                <div class="info">
+                  <div class="icon icon-sm">
+                    <i class="ni ni-bulb-61 text-gradient text-warning" style="font-size: 30px;"></i>
+                  </div>
+
+                  <h5 class="font-weight-bolder mt-3">¿Qué inspira a la AsocDCyT?</h5>
+                  <p class="pe-5">Nos inspira el propósito de crear espacios de encuentro entre los egresados y los actores que hacen vida en el DCyT, con el fin de construir una comunidad de intereses que permita compartir conocimientos y experiencias, así como establecer mecanismos de apoyo recíproco, que generen valor para los involucrados y coadyuven al fortalecimiento de academia.
+                  </p>
+
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info">
+                  <div class="icon icon-sm">
+                    <i class="ni ni-shop text-gradient text-danger" style="font-size: 30px;"></i>
+                  </div>
+
+                  <h5 class="font-weight-bolder mt-3">¿Qué ofrecemos a nuestros afiliados?</h5>
+                  <p class="pe-3">AsocDCyT ofrece a sus afiliados diferentes modalidades de apoyo en el ámbito de formación profesional, acompañamiento  a los negocios, proyección laboral y gestión de trámites académicos.  En este sentido, brindamos servicios bajo la figura de:
+                  </br></br>
+                  1- Actividades de capacitación en modalidad virtual o presencial, avaladas por el DCyT, bajo la forma de diplomados, cursos, talleres y certificaciones.</br>
+                  2- Eventos científicos y profesionales en el área ciencias básicas y tecnologías.</br>
+                  3- Servicios de consultoría y asesoría.</br>
+                  4- Información sobre avances en las ciencias y la tecnología.
+
+                  </p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-8">
+      <div class="container">
+        <div class="row mb-4">
+          <div class="col-lg-12 text-center">
+            <h3 class="text-gradient text-dark">Presentamos nuestros</br> <hspan class="text-gradient text-primary"> Aliados Comerciales</span></h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 ">
+            <img class="w-100 opacity-6" src="/img/logocoreconsultores.png" alt="Logo">
+          </div>
+          <div class="col-lg-4 ">
+            <img class="w-100 opacity-6" src="/img/Logo-PbM.png" alt="Logo">
+          </div>
+          <div class="col-lg-4 ">
+            <img class="w-100 opacity-6" src="/img/grupo-intec.png" alt="Logo">
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- 
+<section class="my-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 col-12 my-auto">
+          <h3 class="text-gradient text-dark">¿Quieres ser<hspan class="text-gradient text-primary"> creador de contenido?</span></h3>
+          <p class="pe-md-5 mt-4">
+            Forma parte de nuestro grupo de redactores, programadores, diseñadores y demás, ingrese directamente a su cuenta personal y seleccione "Crear Contenido".  ¡Apuntate ahora!
+          </p>
+          <div class="">
+            <a href="/login" class="btn bg-gradient-primary mb-5 mb-sm-0">Crear Contenido</a>
+          </div>
+        </div>
+        <div class="col-md-5 col-12 my-auto">
+          <a href="">
+            <img class="w-100 border-radius-lg shadow-lg" src="/assets/img/curved-images/curved-10.jpg" alt="Product Image">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+-->
+    
+    
+    <section class="mt-8 mb-3" id="galeryE">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h3 class="text-gradient text-dark text-center">Galería de<hspan class="text-gradient text-primary"> Egresados</span></h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div id="carouselExampleIndicatorsPEN" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="page-header min-vh-85" style="background-image: url('/img/FB_IMG_1662300841092.jpg');">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="page-header min-vh-85" style="background-image: url('/img/FB_IMG_1662300841092.jpg');">
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicatorsPEN" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicatorsPEN" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+
+    <section class="py-3" id="news">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h3 class="mb-5 mt-5 text-center text-gradient text-dark">Cursos Disponibles del <span class="text-gradient text-warning"> Campus Virtual</span></h3>
+        </div>
+      </div>
+      <div class="row">
+        {{#if success_msg }}
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <span class="alert-icon text-white"><i class="ni ni-like-2"></i></span>
+                <span class="alert-text text-white"><strong>¡Enhorabuena! -</strong> {{ success_msg }}</span>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            {{/if}}
+            {{#if error}}
+              <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                  <span class="alert-icon text-white"><i class="ni ni-support-16"></i></span>
+                  <span class="alert-text text-white"><strong>¡Hey! -</strong> {{error}}</span>
+                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+            {{/if}}
+            {{#each errors }}
+              <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                  <span class="alert-icon text-white"><i class="ni ni-support-16"></i></span>
+                  <span class="alert-text text-white"><strong>¡Hey! -</strong> {{text}}</span>
+                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+            {{/each}}
+            {{#if error_msg }}
+              <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                  <span class="alert-icon text-white"><i class="ni ni-support-16"></i></span>
+                  <span class="alert-text text-white"><strong>¡Hey! -</strong> {{error_msg}}</span>
+                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+            {{/if}}
+          <div class="col-lg-3 col-sm-6">
+            <div class="card card-plain card-blog">
+              <div class="card-image border-radius-lg position-relative">
+                <a type="button" data-bs-toggle="modal" data-bs-target="#modal-desing-graphic">
+                  <img class="w-100 border-radius-lg move-on-hover shadow" src="/img/diseno-grafico.png">
+                </a>
+              </div>
+              <div class="card-body px-0">
+                <h5>
+                  <a type="button" data-bs-toggle="modal" data-bs-target="#modal-desing-graphic" class="text-dark font-weight-bold">Diseño Gráfico: Fácil-Intermedio</a>
+                </h5>
+                <a type="button" data-bs-toggle="modal" data-bs-target="#modal-desing-graphic" class="text-info icon-move-right">Leer más
+                  <i class="fas fa-arrow-right text-sm"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" width="100vw" id="modal-desing-graphic" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" style="max-width: 1000px;
+    margin: 1.75rem auto;" role="document">
+              <div class="modal-content" style="background-color: #fff0;
+    border: 1px solid rgb(0 0 0 / 0%);">
+                <div class="row">
+                    <div class="col">
+                      <div class="card overflow-hidden mb-5">
+                        <div class="row">
+                          <div class="col-lg-7">
+                              <div class="card-header px-4 py-sm-4 py-3">
+                                <h3>Diseño Gráfico: Fácil-Intermedio</h3>
+                                <p class="text-dark">
+                                  <span class="font-weight-bold text-dark">
+                                    EL OBJETIVO DEL CURSO ES APRENDER LOS CONCEPTOS ASOCIADOS A LA CREATIVIDAD Y LAS APLICACIONES DE DISTINTOS PROGRAMAS DE EDICIÓN.
+                                  </span></br></br>
+
+                                  <span class="font-weight-bold text-dark">EN CONSECUENCIA, EN ESTE CURSO DE DISEÑO GRÁFICO SE APRENDERÁ A:</span></br>
+                                  - Construir sus primeras nociones científicas acerca del diseño gráfico.</br>
+                                  - Describir el objeto de estudio de esta disciplina científica.</br>
+                                  - Conocer los fundamentos básicos de la psicología del color.</br>
+                                  - Entender la aplicación del color adecuado.</br>
+                                  - Comprender la función de las formas, líneas, escalas, simetría, espacio y textura en diseños.</br>
+                                  - Asimilar los procesos para crear diseños, teniendo en cuenta la composición, la tipografía, las 
+                                  fuentes y tipos de letras.</br>
+                                  - Utilizar los conocimientos adquiridos para emplearlos no solo en photoshop si no en cualquier 
+                                  programa de edición profesional.</br></br>
+                                  <span class="font-weight-bold text-dark">¿A QUIÉN ESTÁ DIRIGIDO?</span></br>
+                                  - Este curso de diseño gráfico está dirigido para todo tipo de persona que esté interesada en 
+                                  aprender a llevar a cabo la edición, creación de imágenes y contenidos visuales.</br>
+                                </p>
+                                <a href="/curses/desing-graphic" class="btn bg-gradient-primary mt-2 me-2 text-white col-12" data-bs-toggle="tooltip" data-bs-placement="top" title="¡Inscripciones Abiertas!">
+                          ¡Inscribirme!
+                        </a>
+                              </div>
+                          </div>
+                          <div class="col-lg-5 position-relative bg-cover px-0">
+                            <div class="z-index-2 text-center d-flex h-100 w-100 d-flex m-auto justify-content-center">
+                              <div class="row">
+                                <div class="col-12">
+                                  <img src="/img/poster-desing-graphic.png" width="100%" alt="">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="card card-plain card-blog">
+              <div class="card-image border-radius-lg position-relative">
+                <a type="button" data-bs-toggle="modal" data-bs-target="#modal-branding-digital">
+                  <img class="w-100 border-radius-lg move-on-hover shadow" src="/img/branding-digital.png">
+                </a>
+              </div>
+              <div class="card-body px-0">
+                <h5>
+                  <a type="button" data-bs-toggle="modal" data-bs-target="#modal-branding-digital" class="text-dark font-weight-bold">Diseño y Gestión de Branding Personal</a>
+                </h5>
+                <a type="button" data-bs-toggle="modal" data-bs-target="#modal-branding-digital" class="text-info icon-move-right">Leer más
+                  <i class="fas fa-arrow-right text-sm"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" width="100vw" id="modal-branding-digital" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" style="max-width: 1000px;
+    margin: 1.75rem auto;" role="document">
+              <div class="modal-content" style="background-color: #fff0;
+    border: 1px solid rgb(0 0 0 / 0%);">
+                <div class="row">
+                    <div class="col">
+                      <div class="card overflow-hidden mb-5">
+                        <div class="row">
+                          <div class="col-lg-7">
+                              <div class="card-header px-4 py-sm-4 py-3">
+                                <h3>Diseño y Gestión de Branding Personal</h3>
+                                <p class="text-dark">
+                                  En el curso de Diseño y Gestión del Branding Digital aprenderás a pensar en ti como una marca y brindar valor a tu audiencia con el fin de sobresalir en un mercado altamente competitivo.
+                                  </br></br>
+                                  En este curso vas a adquirir conocimientos y competencias básicas para desarrollar, optimizar y ejecutar un Plan de Marca Personal, con el objetivo de diferenciarte, conseguir relevancia y reputación ante un público objetivo; tanto desde el punto de vista personal, como profesional.
+</br></br>
+                                  •	Profesionales independientes y público en general, que deseen destacarse en su entorno profesional y social como marca, con valor diferencial y conseguir el éxito.
+                                  •	Egresados y estudiantes universitarios que deseen iniciar un proyecto en el área digital. 
+                                </p>
+                                <a href="/curses/branding" class="btn bg-gradient-primary mt-2 me-2 text-white col-12" data-bs-toggle="tooltip" data-bs-placement="top" title="¡Inscripciones Abiertas!">
+                          ¡Inscribirme!
+                        </a>
+                              </div>
+                          </div>
+                          <div class="col-lg-5 position-relative bg-cover px-0">
+                            <div class="z-index-2 text-center d-flex h-100 w-100 d-flex m-auto justify-content-center">
+                              <div class="row">
+                                <div class="col-12">
+                                  <img src="/img/IMG_20221029_081235_839.jpg" width="100%" alt="">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="card card-plain card-blog">
+              <div class="card-image border-radius-lg position-relative">
+                <a type="button" data-bs-toggle="modal" data-bs-target="#modal-photoshop">
+                  <img class="w-100 border-radius-lg move-on-hover shadow" src="/img/photoshop.png">
+                </a>
+              </div>
+              <div class="card-body px-0">
+                <h5>
+                  <a type="button" data-bs-toggle="modal" data-bs-target="#modal-photoshop" class="text-dark font-weight-bold">Photoshop Desde Cero: Principios De La Edición Digital
+  </a>
+                </h5>
+                <a type="button" data-bs-toggle="modal" data-bs-target="#modal-photoshop" class="text-info icon-move-right">Leer más
+                  <i class="fas fa-arrow-right text-sm"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" width="100vw" id="modal-photoshop" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" style="max-width: 1000px;
+    margin: 1.75rem auto;" role="document">
+              <div class="modal-content" style="background-color: #fff0;
+    border: 1px solid rgb(0 0 0 / 0%);">
+                <div class="row">
+                    <div class="col">
+                      <div class="card overflow-hidden mb-5">
+                        <div class="row">
+                          <div class="col-lg-7">
+                              <div class="card-header px-4 py-sm-4 py-3">
+                                <h3>Photoshop Desde Cero: Principios De La Edición Digital</h3>
+                                <p class="text-dark">
+                                  En el curso de Photoshop desde cero, principios de la edición digital, aprenderás a uso de una serie de herramientas, principios y estrategias orientadas al manejo de la imagen digital.
+                                  </br></br>
+                                  En este curso vas a adquirir conocimientos y competencias básicas para edición y retoque de imágenes digitales por medio del uso de las herramientas que ofrece Adobe Photoshop, para la aplicación de técnicas en el diseño de trabajos académicos, profesionales y personales.
+
+                                </p>
+                                <a href="/curses/photoshop" class="btn bg-gradient-primary mt-2 me-2 text-white col-12" data-bs-toggle="tooltip" data-bs-placement="top" title="¡Inscripciones Abiertas!">
+                          ¡Inscribirme!
+                        </a>
+                              </div>
+                          </div>
+                          <div class="col-lg-5 position-relative bg-cover px-0">
+                            <div class="z-index-2 text-center d-flex h-100 w-100 d-flex m-auto justify-content-center">
+                              <div class="row">
+                                <div class="col-12">
+                                  <img src="/img/IMG_20221029_081358_262.jpg" width="100%" alt="">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-12 col-12">
+            <div class="card card-blog card-background">
+              <div class="full-background" style="background-image: url('https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/seaside.jpg')"></div>
+              <div class="card-body">
+                <div class="content-left text-start my-auto py-4">
+                  <a href="https://www.campus.asocdcyt.com/?redirect=0" target="_blank">
+                    <h2 class="card-title text-white">Variedad en Cursos</h2>
+                    <p class="card-description text-white">Observa los interesantes cursos que ofrecemos </p>
+                    <a href="https://www.campus.asocdcyt.com/?redirect=0" target="_blank" class="text-white icon-move-right">Observar
+                      <i class="fas fa-arrow-right text-sm"></i>
+                    </a>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      </div>
+    </section>
+
+
+  <section class="py-7">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 mx-auto text-center">
+        <h2 class="mb-0">Personas con confianza</h2>
+        <h2 class="text-gradient text-primary mb-3">Comentarios de nuestros mejores aliados</h2>
+      </div>
+    </div>
+    <div class="row mt-6">
+
+
+      <div class="col-lg-4 col-md-8">
+        <div class="card card-plain">
+          <div class="card-body">
+            <div class="author align-items-center">
+              <img alt="" class="avatar shadow" src="/img/nasri chakra 21-u106673-fr2.jpg">
+              <div class="name ps-3">
+                <span>Nasri Chakra</span>
+                <div class="stats">
+                  <small>
+                    
+                  </small>
+                </div>
+              </div>
+            </div>
+            <p class="mt-4">" Excelente iniciativa puesto que en esta era de transformación digital lo más preciado son las redes de personas que conformen el
+Ecosistema de relaciones que permitan lograr las metas deseadas de las organizaciones que emprenden este tipo de iniciativas "</p>
+            <div class="rating mt-3 text-center">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <div class="col-lg-4 col-md-8 ms-md-auto">
+        <div class="card bg-gradient-primary">
+          <div class="card-body">
+            <div class="author align-items-center">
+              <img alt="" class="avatar shadow" src="/img/leonardo-ponte.png">
+              <div class="name ps-3">
+                <h6 class="text-white mb-0 font-weight-bolder">Leonardo Ponte</h6>
+                <div class="stats text-white">
+                  EL GURÚ
+                </div>
+              </div>
+            </div>
+            <p class="mt-4 text-white">"Crear una Base de Datos de egresados para beneficio de sus propios integrantes, de la Universidad y de las futuras generaciones de tecnólogos, seguidamente conformar con ella una asociación y luego colgarla en un ambiente web para disfrute y uso del mundo entero, definitivamente es una idea maravillosa que está y seguirá generando muchas satisfacciones a nivel nacional e internacional. Es una obra llevada adelante por verdaderos Gurús. Felicitaciones por este gran logro que cuenta con mi apoyo total e incondicional."</p>
+            <div class="rating mt-3 text-center">
+              <i class="fas fa-star text-white"></i>
+              <i class="fas fa-star text-white"></i>
+              <i class="fas fa-star text-white"></i>
+              <i class="fas fa-star text-white"></i>
+              <i class="fas fa-star text-white"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-8">
+        <div class="card card-plain">
+          <div class="card-body">
+            <div class="author align-items-center">
+              <img alt="" class="avatar shadow" src="/img/team-234.png">
+              <div class="name ps-3">
+                <span>Franklin Ramírez</span>
+                <div class="stats">
+                  <small>
+                    
+                  </small>
+                </div>
+              </div>
+            </div>
+            <p class="mt-4">" Siempre agradecido de haber recibido la mejor formación académica e integral en el Decanato de Ciencias y Tecnología de la UCLA. Sigo luchando por un mejor país. "</p>
+            <div class="rating mt-3 text-center">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    
+  </div>
+</section>
+
+    <section class="pt-sm-8 pb-5 position-relative bg-gradient-primary">
+      <div class="position-absolute w-100 z-inde-1 top-0 mt-n3">
+        <svg width="100%" viewBox="0 -2 1920 157" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <title>wave-down</title>
+          <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g fill="#FFFFFF" fill-rule="nonzero">
+              <g id="wave-down">
+                <path d="M0,60.8320331 C299.333333,115.127115 618.333333,111.165365 959,47.8320321 C1299.66667,-15.5013009 1620.66667,-15.2062179 1920,47.8320331 L1920,156.389409 L0,156.389409 L0,60.8320331 Z" id="Path-Copy-2" transform="translate(960.000000, 78.416017) rotate(180.000000) translate(-960.000000, -78.416017) "></path>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 text-start mb-5 mt-5">
+            <h3 class="text-white z-index-1 position-relative">Junta Directiva 2019 – 2025</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-12">
+            <div class="card card-profile overflow-hidden">
+              <div class="row">
+                <div class="col-lg-4 col-md-6 col-12 pe-lg-0">
+                  <a href="javascript:;">
+                    <div class="p-3 pe-md-0">
+                      <img class="w-100 border-radius-md" src="/img/WhatsApp Image 2022-08-23 at 7.04.47 AM.jpeg" alt="image">
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-8 col-md-6 col-12 ps-lg-0 my-auto">
+                  <div class="card-body">
+                    <h5 class="mb-0">Graciano Ramos</h5>
+                    <h6 class="text-info">Presidente</h6>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-12">
+            <div class="card card-profile mt-lg-0 mt-5 overflow-hidden">
+              <div class="row">
+                <div class="col-lg-4 col-md-6 col-12 pe-lg-0">
+                  <a href="javascript:;">
+                    <div class="p-3 pe-md-0">
+                      <img class="w-100 border-radius-md" src="/img/jesus-medina.png" alt="image">
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-8 col-md-6 col-12 ps-lg-0 my-auto">
+                  <div class="card-body">
+                    <h5 class="mb-0">Jesús Medina</h5>
+                    <h6 class="text-info">Vicepresidente</h6>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-lg-6 col-12">
+            <div class="card card-profile overflow-hidden z-index-2">
+              <div class="row">
+                <div class="col-lg-4 col-md-6 col-12 pe-lg-0">
+                  <a href="javascript:;">
+                    <div class="p-3 pe-md-0">
+                      <img class="w-100 border-radius-md" src="/img/edikson.png" alt="image">
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-8 col-md-6 col-12 ps-lg-0 my-auto">
+                  <div class="card-body">
+                    <h5 class="mb-0">Edikson Garcia</h5>
+                    <h6 class="text-info">Tesorero</h6>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-12">
+            <div class="card card-profile mt-lg-0 mt-5 overflow-hidden z-index-2">
+              <div class="row">
+                <div class="col-lg-4 col-md-6 col-12 pe-lg-0">
+                  <a href="javascript:;">
+                    <div class="p-3 pe-md-0">
+                      <img class="w-100 border-radius-md" src="/img/alvaro.png" alt="image">
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-8 col-md-6 col-12 ps-lg-0 my-auto">
+                  <div class="card-body">
+                    <h5 class="mb-0">Alvaro Niño</h5>
+                    <h6 class="text-info">Secretario</h6>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="position-absolute w-100 bottom-0 mn-n1">
+        <svg width="100%" viewBox="0 -1 1920 166" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <title>wave-up</title>
+          <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g transform="translate(0.000000, 5.000000)" fill="#FFFFFF" fill-rule="nonzero">
+              <g id="wave-up" transform="translate(0.000000, -5.000000)">
+                <path d="M0,70 C298.666667,105.333333 618.666667,95 960,39 C1301.33333,-17 1621.33333,-11.3333333 1920,56 L1920,165 L0,165 L0,70 Z" fill="#f8f9fa"></path>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </div>
+    </section>
+
+    <section class="pt-sm-8 pb-5 position-relative bg-gradient-warning">
+      <div class="position-absolute w-100 z-inde-1 top-0 mt-n3">
+        <svg width="100%" viewBox="0 -2 1920 157" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <title>wave-down</title>
+          <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g fill="#FFFFFF" fill-rule="nonzero">
+              <g id="wave-down">
+                <path d="M0,60.8320331 C299.333333,115.127115 618.333333,111.165365 959,47.8320321 C1299.66667,-15.5013009 1620.66667,-15.2062179 1920,47.8320331 L1920,156.389409 L0,156.389409 L0,60.8320331 Z" id="Path-Copy-2" transform="translate(960.000000, 78.416017) rotate(180.000000) translate(-960.000000, -78.416017) "></path>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 text-start mb-5 mt-5">
+            <h3 class="text-white z-index-1 position-relative">Consejo Asesor 2019 – 2025</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-12">
+            <div class="card card-profile overflow-hidden">
+              <div class="row">
+                <div class="col-lg-4 col-md-6 col-12 pe-lg-0">
+                  <a href="javascript:;">
+                    <div class="p-3 pe-md-0">
+                      <img class="w-100 border-radius-md" src="/img/yenny-salazar.png" alt="image">
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-8 col-md-6 col-12 ps-lg-0 my-auto">
+                  <div class="card-body">
+                    <h5 class="mb-0">Yenny Salazar</h5>
+                    <h6 class="text-info">Decana</h6>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-lg-6 col-12">
+            <div class="card card-profile overflow-hidden z-index-2">
+              <div class="row">
+                <div class="col-lg-4 col-md-6 col-12 pe-lg-0">
+                  <a href="javascript:;">
+                    <div class="p-3 pe-md-0">
+                      <img class="w-100 border-radius-md" src="/img/darwin-romero.png" alt="image">
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-8 col-md-6 col-12 ps-lg-0 my-auto">
+                  <div class="card-body">
+                    <h5 class="mb-0">Darwin Romero</h5>
+                    <h6 class="text-info">Director del Programa de Ingeniería en Informática</h6>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-12">
+            <div class="card card-profile mt-lg-0 mt-5 overflow-hidden z-index-2">
+              <div class="row">
+                <div class="col-lg-4 col-md-6 col-12 pe-lg-0">
+                  <a href="javascript:;">
+                    <div class="p-3 pe-md-0">
+                      <img class="w-100 border-radius-md" src="/img/roxana-produccion.png" alt="image">
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-8 col-md-6 col-12 ps-lg-0 my-auto">
+                  <div class="card-body">
+                    <h5 class="mb-0">Roxana Martinez</h5>
+                    <h6 class="text-info">Directora del Programa de Ingeniería en Producción</h6>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="position-absolute w-100 bottom-0 mn-n1">
+        <svg width="100%" viewBox="0 -1 1920 166" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <title>wave-up</title>
+          <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g transform="translate(0.000000, 5.000000)" fill="#FFFFFF" fill-rule="nonzero">
+              <g id="wave-up" transform="translate(0.000000, -5.000000)">
+                <path d="M0,70 C298.666667,105.333333 618.666667,95 960,39 C1301.33333,-17 1621.33333,-11.3333333 1920,56 L1920,165 L0,165 L0,70 Z" fill="#f8f9fa"></path>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </div>
+    </section>
+
+    <section class="my-5 pt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 m-auto">
+            <h4>Se el primero en ver las noticias.</h4>
+            <div class="row">
+              <div class="col-8">
+                <div class="input-group">
+                  <input type="text" class="form-control mb-sm-0" placeholder="Coloque su email...">
+                </div>
+              </div>
+              <div class="col-4 ps-0">
+                <button type="button" class="btn bg-gradient-primary mb-0 h-100 position-relative z-index-2">Suscribirme</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 ms-auto">
+            <div class="position-relative">
+              <img class="max-width-50 w-100 position-relative z-index-2" src="/assets/img/illustrations/sign-up.png" alt="image">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+</div>
+  {{>footer-a}}
+
+<script type="text/javascript">
+
+  if (document.getElementById('state1')) {
+    const countUp = new CountUp('state1', document.getElementById("state1").getAttribute("countTo"));
+    if (!countUp.error) {
+      countUp.start();
+    } else {
+      console.error(countUp.error);
+    }
+  }
+  if (document.getElementById('state2')) {
+    const countUp1 = new CountUp('state2', document.getElementById("state2").getAttribute("countTo"));
+    if (!countUp1.error) {
+      countUp1.start();
+    } else {
+      console.error(countUp1.error);
+    }
+  }
+  if (document.getElementById('state3')) {
+    const countUp2 = new CountUp('state3', document.getElementById("state3").getAttribute("countTo"));
+    if (!countUp2.error) {
+      countUp2.start();
+    } else {
+      console.error(countUp2.error);
+    };
+  }
+</script>
+  <style>
+  #ofBar {
+    display: none;
+    background: #fff;
+    z-index: 999999999;
+    font-size: 16px;
+    color: #333;
+    padding: 16px 40px;
+    font-weight: 400;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 40px;
+    width: 80%;
+    border-radius: 8px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 13px 27px -5px rgba(50,50,93,0.25), 0 8px 16px -8px rgba(0,0,0,0.3), 0 -6px 16px -6px rgba(0,0,0,0.025);
+  }
+
+  #ofBar.activo {
+    display: flex;
+  }
+
+  #ofBar-logo img {
+    height: 50px;
+  }
+
+  #ofBar-content {
+    display: inline;
+    padding: 0 15px;
+  }
+
+  #ofBar-right {
+    display: flex;
+    align-items: center;
+  }
+
+  #ofBar b {
+    font-size: 15px !important;
+  }
+  #count-down {
+    display: initial;
+    padding-left: 10px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  #close-bar {
+    font-size: 17px;
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  #close-bar:hover{
+    opacity: 1;
+  }
+  #btn-bar {
+    background-image: linear-gradient(67deg, rgb(255 255 255) 0%, rgb(45 45 136) 0%, rgb(60 174 234) 100%);
+    color: #fff;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 12px;
+    opacity: .95;
+    margin-right: 20px;
+    box-shadow: 0 5px 10px -3px rgba(0,0,0,.23), 0 6px 10px -5px rgba(0,0,0,.25);
+  }
+   #btn-bar, #btn-bar:hover, #btn-bar:focus, #btn-bar:active {
+     text-decoration: none !important;
+     color: #fff !important;
+ }
+  #btn-bar:hover{
+    opacity: 1;
+  }
+
+  #btn-bar span, #ofBar-content span {
+    color: red;
+    font-weight: 700;
+  }
+
+  #oldPriceBar {
+    text-decoration: line-through;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+    top: 2px;
+    position: relative;
+  }
+  #newPrice{
+    color: #fff;
+    font-size: 19px;
+    font-weight: 700;
+    top: 2px;
+    position: relative;
+    margin-left: 7px;
+  }
+
+  #fromText {
+    font-size: 15px;
+    color: #fff;
+    font-weight: 400;
+    margin-right: 3px;
+    top: 0px;
+    position: relative;
+  }
+
+  @media(max-width: 991px){
+
+  }
+  @media (max-width: 768px) {
+    #count-down {
+      display: block;
+      margin-top: 15px;
+    }
+
+    #ofBar {
+      flex-direction: column;
+      align-items: normal;
+    }
+
+    #ofBar-content {
+      margin: 15px 0;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    #ofBar-right {
+      justify-content: flex-end;
+    }
+  }
+
+
+</style>
